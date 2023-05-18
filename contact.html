@@ -4,9 +4,8 @@
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Laplateforme</title>
-                <link rel="stylesheet" href="./accueil.css" />
-                <link rel="shortcut icon" href="./images/shortcut_icon.png" />
+                <title>La Plateforme_contact</title>
+                <link rel="stylesheet" href="./contact.css" />
         </head>
 
         <body>
@@ -14,7 +13,7 @@
                         <nav class="navbar">
                                 <ul class="logo">
                                         <li>
-                                                <a href="./accueil.html"><img src="./images/logo_laplateforme.png" alt="logo la plateforme" height="40" /></a>
+                                                <a href="./accueil.html"><img src="./images/logo_laplateforme.png" alt="logo la plateforme" height="60" /></a>
                                         </li>
                                         <li class="search-container">
                                                 <input type="text" class="search-input" placeholder="Recherche" />
@@ -100,156 +99,83 @@
                                 </div>
                         </nav>
                 </header>
-                <section class="central">
-                        <article class="central-gauche">
-                                <img src="./images/photo-accueil.jpg" alt="" />
-                        </article>
-                        <article class="central-droit">
-                                <div class="zone-text">
-                                        <div class="text-haut">
-                                                <p><strong>La Plateforme</strong> le campus méditerranéen du numérique !</p>
-                                                <br />
-                                                <p>Des parcours frais de scolarité à zéro euros, ouverts à tous les talents, <strong>sans conditions</strong> de ressources et de diplômes.</p>
-                                                <br />
-                                                <p>Un lieu de rencontre entre entreprises et apprenants pour le bénéfice de tous !</p>
-                                        </div>
+                <section class="section1">
+                        <article class="left">
+                                <div class="text">
+                                        <h1>Campus méditerranéen du numérique</h1>
                                         <br />
-                                        <div class="text-bas">
-                                                <h1>Le digital c’est maintenant !</h1>
-                                                <br />
-                                                <a href="#">Les inscriptions sont ouvertes!*</a>
-                                                <br />
-                                                <p id="admission">
-                                                        * sur dossier et test d’admission. <br />
-                                                        Titres de formations homologués par l’Etat, référencés au RNCP
-                                                </p>
-                                        </div>
+                                        <h2>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</h2>
+                                </div>
+                                <br />
+                                <div class="image">
+                                        <img src="./images/HP_visual_light.webp" alt="" height="620" />
                                 </div>
                         </article>
-                </section>
-                <section class="info">
-                        <section class="titre">
-                                <span class="span"></span>
-                                <h1>Se former aux métiers du numérique</h1>
-                        </section>
 
-                        <section class="specialites">
-                                <article class="web-codding">
-                                        <div class="logo-codding">
-                                                <img src="./images/coding.png" alt="logo-codding" height="100" />
+                        <form class="formulaire" action="php" method="post">
+                                <h1>La Plateforme / Contact</h1>
+                                <br />
+                                <article class="form">
+                                        <div class="input">
+                                                <label for="nom">Nom</label>
+                                                <input type="text" id="nom" placeholder="Entrez votre nom" />
                                         </div>
-                                        <br />
+                                        <div class="input">
+                                                <label for="prénom">Prénom</label>
+                                                <input type="text" id="prénom" placeholder="Entrez votre prénom" />
+                                        </div>
+                                        <div class="input">
+                                                <label for="e-mail">Adresse e-mail</label>
+                                                <input type="text" id="e-mail" placeholder=" @ adresse e-mail" />
+                                        </div>
+                                        <div class="input">
+                                                <label for="mobile">Numéro de mobile</label>
+                                                <input type="text" id="mobile" placeholder="Numéro de mobile" />
+                                        </div>
                                         <div>
-                                                <h1>Web Coding</h1>
-                                                <br />
-                                                <h2>Développeur Web et Web</h2>
-                                                <h2>Mobile, RNCP niveau 5 (BAC+2)</h2>
-                                                <h2>Concepteur Développeur d’application, RNCP niveau 6 (BAC+3)</h2>
-                                                <br />
-                                                <h3>Quel que soit votre âge, formez-vous gratuitement en 1 ou 2 ans aux métiers du développement web / mobile, grâce à un modèle pédagogique unique qui s’adapte aux besoins de chacun. Donnez vous la chance de faire du numérique votre avenir.</h3>
-                                                <br />
+                                                <label for="check">J'accepte de recevoir des informations de la part de La Plateforme</label>
+                                                <input type="checkbox" />
                                         </div>
-                                        <div class="bouton">
-                                                <a href="#">LA CODING SCHOOL <img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
+                                        <div>
+                                                <label for="motif">Séléctionner votre choix</label>
+                                                <select name="motif" id="motif">
+                                                        <option selected value="Aide à l'orientation et informations sur les programmes"></option>
+                                                        <option value="Relations Entreprises">Relations Entreprises</option>
+                                                        <option value="Presse / Partenariat / Communication">Presse / Partenariat / Communication</option>
+                                                        <option value="Suivi de candidature">Suivi de candidature</option>
+                                                        <option value="Recrutement RH">Recrutement RH</option>
+                                                        <option value="Taxe d'apprentissage">Taxe d'apprentissage</option>
+                                                        <option value="Autre">Autre</option>
+                                                </select>
                                         </div>
                                 </article>
-                                <article class="IA">
-                                        <div class="logo-IA">
-                                                <img src="./images/AMPOULE_BLEU-150x150.png" alt="logo-ia" height="100" />
-                                        </div>
+                                <div class="options">
+                                        <input type="submit" name="valider" value="Valider &#10004;" />
                                         <br />
-                                        <div>
-                                                <h1>Intelligence Artificielle IA</h1>
-                                                <br />
-                                                <h2>Développeur IA, Bachelor (BAC+3)</h2>
-                                                <h2>Chef de projet IA, MSc (BAC+5)</h2>
-                                                <h2>Post Graduate</h2>
-                                                <h2>CentraleDigitaleLAB, postgraduate (BAC+6)</h2>
-                                                <br />
-                                                <h3>Passionné de data, mordu d’algo ? Rejoignez l’école de l’Intelligence Artificielle qui propose deux cursus de haut niveau destinés à former de futurs experts en IA et data. La Plateforme_ propose également en partenariat avec l’école Centrale de Marseille, un Post Graduate en Intelligence Artificielle.</h3>
-                                                <br />
-                                        </div>
-                                        <div class="bouton">
-                                                <a href="#">L'AI SCHOOL<img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
-                                        </div>
-                                </article>
-                                <article class="Cyber-Security">
-                                        <div class="logo-cyber-security">
-                                                <img src="./images/ORDINATEUR_BLEU-150x150.png" alt="logo-ia" height="100" />
-                                        </div>
-                                        <br />
-                                        <div>
-                                                <h1>Cyber Security</h1>
-                                                <br />
-                                                <h2>Développeur Sécurité, Bachelor (BAC+3)</h2>
-                                                <h2>Administrateur Sécurité, Bachelor (BAC+3)</h2>
-                                                <h2>Responsable de la Protection des Données (DPO), MSc (BAC+5)</h2>
-                                                <br />
-                                                <h3>La sécurité informatique vous passionne ? Découvrez nos 3 programmes de formation pour devenir un expert de la Sécurité des Systèmes d’Information.</h3>
-
-                                                <br />
-                                        </div>
-                                        <div class="bouton">
-                                                <a href="#">Cyber security school<img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
-                                        </div>
-                                </article>
-                        </section>
+                                        <input type="reset" name="reset" value="Effacer &#10005;" />
+                                </div>
+                        </form>
                 </section>
-                <section class="transition-numerique">
-                        <article class="titre">
-                                <span class="span"></span>
-                                <h1>Accélérez votre transformation numérique</h1>
-                        </article>
-                        <br />
-                        <article class="recrute">
-                                <div class="text">
-                                        <div>
-                                                <img src="./images/recruitement.png" alt="" height="100" />
-                                        </div>
-                                        <div>
-                                                <h1>Recrutez nos talents du numérique</h1>
-                                                <br />
-                                                <p>La Plateforme_, fournisseur de talents du numérique vous aide à renforcer vos équipes techniques via le recrutement de nos apprenants en stage, en alternance ou à l’issue de leur formation. Nous vous accompagnons dans le sourcing des candidats et sur la dimension administrative et financière de votre recrutement.</p>
-                                        </div>
+                <section class="section2">
+                        <article class="infos">
+                                <h1>Une autre question ?</h1>
+                                <h2>Nous sommes aussi joignables :</h2>
+                                <br />
+                                <ul>
+                                        <li>_ Par email contact@laplateforme.io</li>
+                                        <li>_ Par téléphone au 04.84.89.43.69 du lundi au vendredi de 9h à 17h</li>
+                                        <li>_ Sur les réseaux sociaux</li>
+                                </ul>
+                                <br />
+                                <div>
+                                        <a target="_blank" href="https://www.facebook.com/LaPlateformeIO"><img src="./images/facebook (2).png" alt="facebook" height="50" /></a>
+                                        <a target="_blank" href="https://www.linkedin.com/school/laplateformeio/"><img src="./images/linkedin.png" alt="linkedin" height="50" /></a>
+                                        <a target="_blank" href="https://twitter.com/LaPlateformeIO"><img src="./images/twitter (1).png" alt="twitter" height="50" /></a>
+                                        <a target="_blank" href="https://www.instagram.com/LaPlateformeIO/"><img src="./images/instagram (2).png" alt="instagram" height="50" /></a>
                                 </div>
-                                <div class="bouton">
-                                        <a href="#">RECRUTEZ NOS TALENTS <img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
-                                </div>
-                        </article>
-
-                        <article class="formation">
-                                <div class="text">
-                                        <div>
-                                                <img src="./images/training.png" alt="" height="100" />
-                                        </div>
-                                        <div>
-                                                <h1>Des formations pour vos collaborateurs</h1>
-                                                <br />
-                                                <p>Le digital transforme la plupart des métiers. Se former tout au long de sa vie n’a jamais été aussi indispensable pour évoluer et/ou garantir son employabilité. Découvrez notre catalogue de formations continues, courtes et adaptées aux attentes des professionnels pour pouvoir saisir les opportunités liées au digital</p>
-                                        </div>
-                                </div>
-                                <div class="bouton">
-                                        <a href="#">RECRUTEZ NOS TALENTS <img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
-                                </div>
-                        </article>
-
-                        <article class="innovation">
-                                <div class="text">
-                                        <div>
-                                                <img src="./images/boost.png" alt="" height="100" />
-                                        </div>
-                                        <div>
-                                                <h1>Accélérez votre innovation</h1>
-                                                <br />
-                                                <p>Que vous soyez une entreprise digitale ou plus traditionnelle, vous devez innover pour poursuivre votre développement et rester compétitif ! Nos experts sont là pour vous aider à évaluer votre maturité, définir vos priorités sur le digital et concrétiser rapidement vos idées via la mise en œuvre de prototypes.</p>
-                                        </div>
-                                </div>
-                                <div class="bouton">
-                                        <a href="#">RECRUTEZ NOS TALENTS <img src="./images/fleche-droite (2).png" alt="fleche droite" height="10" /></a>
-                                </div>
+                                <br />
                         </article>
                 </section>
-
                 <footer class="footer">
                         <article class="footer-left">
                                 <div class="logo">
@@ -304,7 +230,6 @@
                         <p>© La Plateforme - Établissement d'enseignement supérieur technique privé - Tous droits réservés. | Mentions légales | Cookies | Référent handicap : Jessica Soriano</p>
                 </section>
         </body>
-
         <script>
                 const burger = document.querySelector(".burger");
                 const navlinks = document.querySelector(".navlinks");
